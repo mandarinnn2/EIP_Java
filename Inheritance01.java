@@ -5,7 +5,7 @@ class SuperObject{
     }
 
     public void paint(){
-        System.out.println("B");
+        System.out.print("B");
         draw();
     }
 }
@@ -13,7 +13,7 @@ class SuperObject{
 class SubObject extends SuperObject{
     public void paint(){
         super.paint();
-        System.out.println("C");
+        System.out.print("C");
         draw();
     }
 
@@ -22,7 +22,7 @@ class SubObject extends SuperObject{
     }
 
 }
-class Inheritance{
+class Inheritance01{
     public static void main(String[] args){
         SuperObject a = new SubObject();
         a.paint();
